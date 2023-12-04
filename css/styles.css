@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+h1 {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+nav {
+    background-color: aqua;
+    height: 30px;
+    top: 0;
+    width: 1350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    font-weight: bold;
+}
+.home{
+    margin-top: 50px;
+}
+.product {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 60px;
+    max-width: 700px;
+    justify-content: center;
+    margin-left: 250px;
+}
+.product img {
+    max-width: 700px;
+    height: auto;
+}
+.product p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: yellowgreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+
+}
+/*about section*/
+
+.about{
+    text-align: center;
+    height: 700px;
+    margin-top: 200px;
+}
+
+.about h2{
+    text-align: center;
+    font-size: 2.3rem;
+}
+/* Shop Section Styles */
+#shop{
+    background: #4913ec;
+}
+.shop {
+    padding: 20px;
+    text-align: center;
+}
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 10px;
+    max-width: 300px;
+}
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+.item p {
+    margin-top: 10px;
+    justify-content: right;
+    flex-direction: row;
+}
+.add-to-cart {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #cfc1c1;
+    color: white;
+    text-decoration: none;
+}
+footer{
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
