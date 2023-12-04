@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout||Collins Shop</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <nav>
+	   <a href="index.html">Home</a>
+        <a href="https://www.instagram.com/?hl=en">Contact</a>
+        <a href="cart.html">Back</a>
+    </nav>
+    <h1>Checkout</h1>
+     <div class="check-out">
+        <form id="checkout-form">
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <input type="tel" id="Phone Number" name="Phone Number" placeholder="Phone Number" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="text" id="address" name="address" placeholder="Address" required>
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment">
+                <option value="mobile-money">Mobile Money</option>
+                <option value="visa">Visa</option>
+                <option value="cash-on-delivery">Cash on Delivery</option>
+            </select>
+    
+            <button class="checkout" type="button" onclick="processCheckout()">Checkout</button>
+        </form>
+     </div>
+    <script src="index.js"></script>
+</body>
+</html>

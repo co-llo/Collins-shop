@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
+    outline: none;
+    text-decoration: none;
 }
 h1 {
     font-size: 20px;
@@ -20,12 +22,17 @@ nav {
     position: fixed;
 }
 nav a {
-    margin: 0 10px;
+    margin: 0 20px;
+    font-weight: 600;
+    font-size: 1.4rem;
     text-decoration: none;
     color: black;
 }
 nav a:hover {
-    font-weight: bold;
+    font-weight: 800;
+}
+nav a span{
+    margin-left: 270px;
 }
 .home{
     margin-top: 50px;
