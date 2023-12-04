@@ -60,9 +60,13 @@ nav a span{
     padding: 10px 20px;
     background-color: yellowgreen;
     color: white;
-    text-decoration: none;
+    border: none;
+    border-radius: 10px;
     border-radius: 25px;
 
+}
+.learn-more a{
+    text-decoration: none;
 }
 /*about section*/
 
@@ -110,6 +114,9 @@ nav a span{
     padding: 10px 20px;
     background-color: #cfc1c1;
     color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
     text-decoration: none;
 }
 footer{

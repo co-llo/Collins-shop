@@ -1,27 +1,41 @@
-const product={
-    name:"product name",
-    price:20
-};
-let cart=[];
-let total=0;
+//adding elements to cart
+document.addEventListener("DOMContentLoaded", function() {
+    const addToCartButtons = document.querySelectorAll(".btn-add-to-cart");
 
-function addToCart(){
-    cart.push(product);
-    total+=product.price;
+    addToCartButtons.forEach(button => {
+        button.addEventListener("click", function() {
+            const itemId = button.getAttribute("data-item-id");
+            const itemName = button.getAttribute("data-item-name");
+            const itemPrice = button.getAttribute("data-item-price");
 
-    updateCartUI();
-}
+            const item = {
+                id: itemId,
+                name: itemName,
+                price: parseFloat(itemPrice)
+            };
 
-function updateCartUI(){
-    const cartItemsElement=document.getElementById('cart-items');
-    const totalElement=document.getElementById("total");
+            const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
-    cartItemsElement.innerHTML="";
+            cartItems.push(item);
 
-    cart.forEach(item=>{
-        const listenItem=document.createElement("li");
-        listenItem.textContent=item.name;
-        cartItemsElement.appendChild(listItem);
+            localStorage.setItem("cart", JSON.stringify(cartItems));
+
+            alert("Item added to cart!");
+
+
+
+        });
     });
-    totalElement.textContent=total;
-}
+});
+
+
+
+
+// checkout form 
+document.addEventListener("DOMContentLoaded", function() {
+    const checkoutButton = document.querySelector(".btn-checkout");
+
+    checkoutButton.addEventListener("click", function() {
+        window.location.href = "checkout.html";
+    });
+});
